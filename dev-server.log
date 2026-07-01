@@ -151,3 +151,5 @@
  GET /dashboard 200 in 358ms (next.js: 215ms, application-code: 143ms)
  GET /settings 200 in 222ms (next.js: 176ms, application-code: 46ms)
  GET /dashboard 200 in 57ms (next.js: 9ms, application-code: 48ms)
+ GET /dashboard 307 in 174ms (next.js: 10ms, application-code: 165ms)
+ GET /login 200 in 68ms (next.js: 9ms, application-code: 59ms)
