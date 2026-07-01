@@ -125,3 +125,13 @@
 ✓ Finished filesystem cache database compaction in 10.1s
  GET / 500 in 2.4s (next.js: 2.1s, application-code: 278ms)
 ✓ Compiled in 262ms
+ GET / 200 in 263ms (next.js: 138ms, application-code: 125ms)
+ GET /login 200 in 234ms (next.js: 187ms, application-code: 47ms)
+ GET /login 200 in 40ms (next.js: 8ms, application-code: 32ms)
+ POST /api/auth/login 200 in 205ms (next.js: 64ms, application-code: 141ms)
+ GET /dashboard 200 in 331ms (next.js: 226ms, application-code: 104ms)
+ GET /settings 200 in 537ms (next.js: 503ms, application-code: 35ms)
+ GET /dashboard 200 in 59ms (next.js: 9ms, application-code: 50ms)
+ GET /settings 200 in 38ms (next.js: 9ms, application-code: 29ms)
+ POST /api/auth/delete-account 200 in 264ms (next.js: 212ms, application-code: 51ms)
+ GET /login 200 in 42ms (next.js: 9ms, application-code: 33ms)
