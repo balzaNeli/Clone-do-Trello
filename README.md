@@ -35,5 +35,42 @@ Para rodar este projeto na sua máquina, siga os passos abaixo:
 ### Passo a passo
 1. **Clone o repositório:**
    ```bash
-   git clone [link-do-seu-repositorio]
-   cd [nome-da-pasta]
+   git clone <link-do-seu-repositorio>
+   cd <nome-da-pasta>
+
+```
+
+2. **Instale as dependências:**
+```bash
+npm install
+
+```
+
+
+3. **Configure o banco de dados:**
+```bash
+npx prisma migrate dev
+
+```
+
+
+4. **Inicie o servidor de desenvolvimento:**
+```bash
+npm run dev
+
+```
+
+
+5. **Acesse no navegador:**
+Abra [http://localhost:3000](http://localhost:3000) e comece a usar!
+
+---
+
+## 📝 Conclusão do Estudo
+
+Este estudo demonstrou que a IA é capaz de gerenciar a lógica de um sistema complexo desde que o usuário saiba dividir o problema em partes pequenas e sequenciais (o "chain of thought"). O maior desafio encontrado foi a gestão de erros de hidratação e a persistência de dados, problemas que serviram como ótimo aprendizado sobre a arquitetura do Next.js.
+
+---
+
+*Desenvolvido com auxílio de IA.*
+
