@@ -35,8 +35,8 @@ Para rodar este projeto na sua máquina, siga os passos abaixo:
 ### Passo a passo
 1. **Clone o repositório:**
    ```bash
-   git clone <link-do-seu-repositorio>
-   cd <nome-da-pasta>
+   git clone https://github.com/balzaNeli/Clone-do-Trello.git
+   cd Clone-do-Trello
 
 ```
 
