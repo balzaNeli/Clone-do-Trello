@@ -135,3 +135,19 @@
  GET /settings 200 in 38ms (next.js: 9ms, application-code: 29ms)
  POST /api/auth/delete-account 200 in 264ms (next.js: 212ms, application-code: 51ms)
  GET /login 200 in 42ms (next.js: 9ms, application-code: 33ms)
+✓ Compiled in 219ms
+✓ Compiled in 94ms
+ GET /login 200 in 374ms (next.js: 185ms, application-code: 189ms)
+ GET /login 200 in 191ms (next.js: 123ms, application-code: 67ms)
+ GET /login 200 in 43ms (next.js: 9ms, application-code: 34ms)
+ GET /login 200 in 171ms (next.js: 117ms, application-code: 53ms)
+ GET /login 200 in 174ms (next.js: 119ms, application-code: 55ms)
+✓ Compiled in 128ms
+ GET /login 200 in 190ms (next.js: 123ms, application-code: 67ms)
+ GET /login 200 in 149ms (next.js: 9ms, application-code: 141ms)
+ GET /login 200 in 75ms (next.js: 8ms, application-code: 66ms)
+ GET /register 200 in 217ms (next.js: 172ms, application-code: 45ms)
+ POST /api/auth/register 201 in 212ms (next.js: 68ms, application-code: 144ms)
+ GET /dashboard 200 in 358ms (next.js: 215ms, application-code: 143ms)
+ GET /settings 200 in 222ms (next.js: 176ms, application-code: 46ms)
+ GET /dashboard 200 in 57ms (next.js: 9ms, application-code: 48ms)

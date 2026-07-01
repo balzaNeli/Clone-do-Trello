@@ -215,3 +215,4 @@ https://nextjs.org/docs/messages/module-not-found
     at processMessage (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
     at connect/< (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:27)
     at handleMessage (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:32) (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+⚠ Fast Refresh had to perform a full reload when ./src/lib/theme.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload

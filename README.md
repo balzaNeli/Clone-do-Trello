@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Clone do Trello - Estudo de IA Full-Stack
 
-## Getting Started
+Este projeto é um **estudo experimental** focado em testar a capacidade de uma Inteligência Artificial em atuar como um desenvolvedor full-stack sênior. O objetivo principal foi validar até onde a IA consegue arquitetar, estruturar, estilizar e depurar uma aplicação complexa a partir de instruções sequenciais.
 
-First, run the development server:
+## 🚀 Sobre o Projeto
+O sistema é um clone funcional de um gerenciador de tarefas (estilo Trello), desenvolvido com uma stack moderna focada em performance e facilidade de manutenção. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Stack Utilizada
+- **Framework:** Next.js (React)
+- **Estilização:** Tailwind CSS (Design System inspirado na Apple)
+- **Banco de Dados:** SQLite (com Prisma ORM)
+- **Funcionalidades:** Drag and Drop (dnd-kit), Temas (Dark/Light Mode), Autenticação local, Upload de arquivos local e Markdown.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🤖 Prompts Utilizados
+O desenvolvimento seguiu uma metodologia de 5 prompts + ajustes de depuração:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Estrutura & DB:** "Atue como um desenvolvedor full-stack sênior. Inicie um projeto usando Next.js, Tailwind CSS e Prisma com SQLite..."
+2. **Layout:** "Construa a interface principal... inspirada no design system da Apple... colunas infinitas com scroll horizontal."
+3. **Funcionalidades:** "Integre 'dnd-kit' para arrastar e soltar, Server Actions e estado de conclusão de cartões."
+4. **Detalhes:** "Crie modal para etiquetas, descrição em Markdown (react-markdown) e comentários."
+5. **Polimento:** "Implemente `next-themes` para modo escuro, exclusão de projetos/contas com confirmação e upload de imagens local."
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Como Testar o Projeto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Para rodar este projeto na sua máquina, siga os passos abaixo:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Pré-requisitos
+- [Node.js](https://nodejs.org/) instalado.
+- Git instalado.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Passo a passo
+1. **Clone o repositório:**
+   ```bash
+   git clone [link-do-seu-repositorio]
+   cd [nome-da-pasta]

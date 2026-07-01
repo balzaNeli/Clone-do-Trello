@@ -3,16 +3,20 @@
 import { useTheme } from "@/lib/theme";
 
 export default function ThemeToggle() {
-  const { theme, toggle } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
+
+  function toggle() {
+    setTheme(resolvedTheme === "dark" ? "light" : "dark");
+  }
 
   return (
     <button
       type="button"
       onClick={toggle}
       className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full text-zinc-400 transition-colors hover:bg-zinc-100 hover:text-zinc-600 dark:hover:bg-[#3a3a3c] dark:hover:text-[#f5f5f7]"
-      title={theme === "dark" ? "Modo claro" : "Modo escuro"}
+      title={resolvedTheme === "dark" ? "Modo claro" : "Modo escuro"}
     >
-      {theme === "dark" ? (
+      {resolvedTheme === "dark" ? (
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
           <circle cx="8" cy="8" r="3" stroke="currentColor" strokeWidth="1.5" />
           <path d="M8 1V2.5M8 13.5V15M3 3L4 4M12 12L13 13M1 8H2.5M13.5 8H15M3 13L4 12M12 4L13 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
