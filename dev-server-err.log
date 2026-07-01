@@ -1,0 +1,217 @@
+⨯ Error [PrismaClientKnownRequestError]: 
+Invalid `{imported module ./src/lib/prisma.ts}["prisma"].label.create()` invocation in
+C:\Users\XEON\Documents\Garoto de Programa\Clone do Trello\.next\dev\server\chunks\[root-of-the-server]__0xe9ef3._.js:487:160
+
+  484         status: 403
+  485     });
+  486 }
+→ 487 const label = await {imported module ./src/lib/prisma.ts}["prisma"].label.create(
+Unique constraint failed on the fields: (`name`, `projectId`)
+    at <unknown> (src\app\api\labels\route.ts:40:36)
+    at async POST (src\app\api\labels\route.ts:40:17)
+  38 |   }
+  39 |
+> 40 |   const label = await prisma.label.create({
+     |                                    ^
+  41 |     data: { name, color: color ?? "#3b82f6", projectId },
+  42 |   });
+  43 | {
+  code: 'P2002',
+  meta: {
+    modelName: 'Label',
+    driverAdapterError: Error [DriverAdapterError]: UniqueConstraintViolation
+        at async POST (src\app\api\labels\route.ts:40:17)
+      38 |   }
+      39 |
+    > 40 |   const label = await prisma.label.create({
+         |                 ^
+      41 |     data: { name, color: color ?? "#3b82f6", projectId },
+      42 |   });
+      43 | {
+      [cause]: [Object]
+    }
+  },
+  clientVersion: '7.8.0'
+}
+[browser] Uncaught TypeError: can't access property "color", label is undefined
+    at SortableCard/<.children<.children< (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/src_app_board_%5Bid%5D_0b0q-3b._.js:741:29)
+    at SortableCard (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/src_app_board_%5Bid%5D_0b0q-3b._.js:738:39)
+    at react_stack_bottom_frame (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:15037:24)
+    at renderWithHooks (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:4620:42)
+    at updateFunctionComponent (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6081:21)
+    at beginWork (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6691:24)
+    at runWithFiberInDEV (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:131)
+    at performUnitOfWork (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9555:97)
+    at workLoopSync (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9449:57)
+    at renderRootSync (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9433:13)
+    at performWorkOnRoot (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9098:47)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:26)
+    at performWorkUntilDeadline (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:72)
+    at ColumnContainer/<.children<.children<.children< (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/src_app_board_%5Bid%5D_0b0q-3b._.js:974:255)
+    at ColumnContainer (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/src_app_board_%5Bid%5D_0b0q-3b._.js:974:41)
+    at BoardClient/<.children<.children<.children< (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/src_app_board_%5Bid%5D_0b0q-3b._.js:1473:253)
+    at BoardClient (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/src_app_board_%5Bid%5D_0b0q-3b._.js:1473:37)
+    at BoardPage (src\app\board\[id]\page.tsx:31:5)
+  29 |
+  30 |   return (
+> 31 |     <BoardClient
+     |     ^
+  32 |       userName={user.name ?? "Usuário"}
+  33 |       project={{
+  34 |         id: project.id,
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <div ref={{current:null}} className="flex flex-..." style={{...}}>
+      <ColumnContainer column={{id:"cmr1hf...", ...}} cards={[...]} editingColumnId={null} editingColumnTitle="" ...>
+        <div ref={function useNodeRef.useCallback[setNodeRef]} className="group flex...">
+          <div>
+          <div className="flex-1 spa...">
+            <SortableContext items={[...]} strategy={function verticalListSortingStrategy}>
+              <SortableCard card={{id:"cmr1hf...", ...}} onToggleDone={function toggleDone} onDelete={function onDelete} ...>
+                <div ref={function useCombinedRefs.useMemo} style={{...}} className={"group re..."}>
+                  <div>
+                  <div className="flex items...">
+                    <button>
+                    <button className="flex-1 tex..." onClick={function onClick}>
+                      <p
+                        className="text-sm font-medium text-[#1d1d1f]"
+                        role="button"
+                        tabIndex={0}
+                        aria-disabled={false}
+                        aria-pressed={undefined}
+                        aria-roledescription="sortable"
++                       aria-describedby="DndDescribedBy-0"
+-                       aria-describedby="DndDescribedBy-1"
+                        onPointerDown={function useSyntheticListeners.useMemo}
+                      >
++                       ASdads
+                    ...
+                  ...
+            ...
+      ...
+    ...
+    ...
+    ...
+ 
+    at runWithFiberInDEV (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:131)
+    at emitPendingHydrationWarnings (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3438:30)
+    at completeWork (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6885:102)
+    at runWithFiberInDEV (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:131)
+    at completeUnitOfWork (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9622:23)
+    at performUnitOfWork (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9557:28)
+    at workLoopConcurrentByScheduler (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9551:75)
+    at renderRootConcurrent (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9534:71)
+    at performWorkOnRoot (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:26)
+    at performWorkUntilDeadline (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:72) (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:131)
+⨯ ./src/app/dashboard/page.tsx:6:1
+Module not found: Can't resolve '@/components/theme-toggle'
+  [90m4 |[0m [36mimport[0m [33mLogoutButton[0m [36mfrom[0m [32m"./logout-button"[0m;
+  [90m5 |[0m [36mimport[0m [33mNewProjectButton[0m [36mfrom[0m [32m"./new-project-button"[0m;
+[31m[1m>[0m [90m6 |[0m [36mimport[0m [33mThemeToggle[0m [36mfrom[0m [32m"@/components/theme-toggle"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m8 |[0m
+  [90m9 |[0m [36mexport[0m [36mdefault[0m [36masync[0m [36mfunction[0m [33mDashboardPage[0m() {
+
+Import map: aliased to relative './src/components/theme-toggle' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/dashboard/page.tsx:6:1
+Module not found: Can't resolve '@/components/theme-toggle'
+  [90m4 |[0m [36mimport[0m [33mLogoutButton[0m [36mfrom[0m [32m"./logout-button"[0m;
+  [90m5 |[0m [36mimport[0m [33mNewProjectButton[0m [36mfrom[0m [32m"./new-project-button"[0m;
+[31m[1m>[0m [90m6 |[0m [36mimport[0m [33mThemeToggle[0m [36mfrom[0m [32m"@/components/theme-toggle"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m8 |[0m
+  [90m9 |[0m [36mexport[0m [36mdefault[0m [36masync[0m [36mfunction[0m [33mDashboardPage[0m() {
+
+Import map: aliased to relative './src/components/theme-toggle' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[browser] Uncaught Error: ./src/app/dashboard/page.tsx:6:1
+Module not found: Can't resolve '@/components/theme-toggle'
+  4 | import LogoutButton from "./logout-button";
+  5 | import NewProjectButton from "./new-project-button";
+> 6 | import ThemeToggle from "@/components/theme-toggle";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Link from "next/link";
+  8 |
+  9 | export default async function DashboardPage() {
+
+Import map: aliased to relative './src/components/theme-toggle' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./src/app/dashboard/page.tsx:6:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./src/app/dashboard/page.tsx:6:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+[browser] ./src/app/dashboard/page.tsx:6:1
+Module not found: Can't resolve '@/components/theme-toggle'
+  4 | import LogoutButton from "./logout-button";
+  5 | import NewProjectButton from "./new-project-button";
+> 6 | import ThemeToggle from "@/components/theme-toggle";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Link from "next/link";
+  8 |
+  9 | export default async function DashboardPage() {
+
+Import map: aliased to relative './src/components/theme-toggle' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found 
+    at processMessage (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at connect/< (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:27)
+    at handleMessage (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:32) (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+[browser] ./src/app/dashboard/page.tsx:6:1
+Module not found: Can't resolve '@/components/theme-toggle'
+  4 | import LogoutButton from "./logout-button";
+  5 | import NewProjectButton from "./new-project-button";
+> 6 | import ThemeToggle from "@/components/theme-toggle";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Link from "next/link";
+  8 |
+  9 | export default async function DashboardPage() {
+
+Import map: aliased to relative './src/components/theme-toggle' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found 
+    at processMessage (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at connect/< (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:27)
+    at handleMessage (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:32) (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+[browser] ./src/app/dashboard/page.tsx:6:1
+Module not found: Can't resolve '@/components/theme-toggle'
+  4 | import LogoutButton from "./logout-button";
+  5 | import NewProjectButton from "./new-project-button";
+> 6 | import ThemeToggle from "@/components/theme-toggle";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Link from "next/link";
+  8 |
+  9 | export default async function DashboardPage() {
+
+Import map: aliased to relative './src/components/theme-toggle' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found 
+    at processMessage (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at connect/< (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:27)
+    at handleMessage (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:32) (file://C:/Users/XEON/Documents/Garoto de Programa/Clone do Trello/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)

@@ -1,0 +1,127 @@
+▲ Next.js 16.2.9 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://26.213.128.132:3000
+- Environments: .env
+✓ Ready in 1256ms
+
+ GET / 307 in 3.2s (next.js: 2.9s, application-code: 288ms)
+ GET / 307 in 98ms (next.js: 10ms, application-code: 88ms)
+ GET /login 200 in 723ms (next.js: 562ms, application-code: 161ms)
+ GET /register 200 in 507ms (next.js: 463ms, application-code: 44ms)
+ POST /api/auth/register 201 in 1018ms (next.js: 459ms, application-code: 559ms)
+ GET /dashboard 200 in 663ms (next.js: 522ms, application-code: 141ms)
+ POST /api/projects 201 in 276ms (next.js: 209ms, application-code: 68ms)
+ GET /board/cmr1hf6in00014ckwyh03ky3n 200 in 2.3s (next.js: 2.2s, application-code: 115ms)
+ GET /dashboard 200 in 113ms (next.js: 58ms, application-code: 55ms)
+ GET /board/cmr1hf6in00014ckwyh03ky3n 200 in 87ms (next.js: 27ms, application-code: 60ms)
+ POST /api/columns 201 in 223ms (next.js: 178ms, application-code: 45ms)
+ POST /api/columns 201 in 46ms (next.js: 5ms, application-code: 41ms)
+ POST /api/columns 201 in 30ms (next.js: 4ms, application-code: 26ms)
+ POST /api/cards 201 in 335ms (next.js: 178ms, application-code: 157ms)
+ GET /api/cards/cmr1hfy3r00064ckwu2jq5e55/comments 200 in 1520ms (next.js: 1489ms, application-code: 30ms)
+ GET /api/cards/cmr1hfy3r00064ckwu2jq5e55/comments 200 in 38ms (next.js: 19ms, application-code: 19ms)
+ GET /api/cards/cmr1hfy3r00064ckwu2jq5e55/attachments 200 in 1592ms (next.js: 1571ms, application-code: 21ms)
+ GET /api/cards/cmr1hfy3r00064ckwu2jq5e55/attachments 200 in 44ms (next.js: 19ms, application-code: 26ms)
+ POST /api/cards/cmr1hfy3r00064ckwu2jq5e55/comments 201 in 213ms (next.js: 19ms, application-code: 194ms)
+ PATCH /api/cards/cmr1hfy3r00064ckwu2jq5e55 200 in 1582ms (next.js: 1540ms, application-code: 42ms)
+ PATCH /api/cards/cmr1hfy3r00064ckwu2jq5e55 200 in 225ms (next.js: 170ms, application-code: 55ms)
+ PATCH /api/cards/cmr1hfy3r00064ckwu2jq5e55 200 in 41ms (next.js: 19ms, application-code: 22ms)
+ POST /api/cards/cmr1hfy3r00064ckwu2jq5e55/attachments 201 in 103ms (next.js: 21ms, application-code: 83ms)
+ POST /api/cards/toggle-done 200 in 217ms (next.js: 189ms, application-code: 28ms)
+ POST /api/cards/toggle-done 200 in 43ms (next.js: 5ms, application-code: 38ms)
+ GET /api/cards/cmr1hfy3r00064ckwu2jq5e55/comments 200 in 63ms (next.js: 20ms, application-code: 42ms)
+ GET /api/cards/cmr1hfy3r00064ckwu2jq5e55/attachments 200 in 39ms (next.js: 18ms, application-code: 22ms)
+ GET /api/cards/cmr1hfy3r00064ckwu2jq5e55/comments 200 in 25ms (next.js: 4ms, application-code: 21ms)
+ GET /api/cards/cmr1hfy3r00064ckwu2jq5e55/attachments 200 in 28ms (next.js: 4ms, application-code: 24ms)
+ PATCH /api/cards/cmr1hfy3r00064ckwu2jq5e55 200 in 55ms (next.js: 31ms, application-code: 24ms)
+ PATCH /api/cards/cmr1hfy3r00064ckwu2jq5e55 200 in 165ms (next.js: 19ms, application-code: 147ms)
+ POST /api/labels 201 in 977ms (next.js: 336ms, application-code: 641ms)
+ POST /api/labels 500 in 470ms (next.js: 9ms, application-code: 461ms)
+ POST /api/cards/cmr1hfy3r00064ckwu2jq5e55/labels 200 in 1618ms (next.js: 1583ms, application-code: 34ms)
+ GET /board/cmr1hf6in00014ckwyh03ky3n? 200 in 293ms (next.js: 24ms, application-code: 269ms)
+ DELETE /api/columns/cmr1hfvqz00054ckwz2fkq3j6 200 in 1580ms (next.js: 1537ms, application-code: 42ms)
+ DELETE /api/columns/cmr1hfvqz00054ckwz2fkq3j6 403 in 328ms (next.js: 283ms, application-code: 45ms)
+ DELETE /api/columns/cmr1hfqh800044ckwluln1q45 200 in 46ms (next.js: 20ms, application-code: 26ms)
+ GET /board/cmr1hf6in00014ckwyh03ky3n 200 in 118ms (next.js: 22ms, application-code: 96ms)
+ DELETE /api/cards/cmr1hfy3r00064ckwu2jq5e55 200 in 63ms (next.js: 21ms, application-code: 42ms)
+ GET /dashboard 200 in 67ms (next.js: 10ms, application-code: 58ms)
+ POST /api/auth/logout 200 in 203ms (next.js: 184ms, application-code: 19ms)
+ GET /login 200 in 38ms (next.js: 9ms, application-code: 29ms)
+ POST /api/auth/login 200 in 305ms (next.js: 185ms, application-code: 120ms)
+ GET /dashboard 200 in 58ms (next.js: 8ms, application-code: 51ms)
+ POST /api/auth/logout 200 in 29ms (next.js: 16ms, application-code: 13ms)
+ GET /login 200 in 37ms (next.js: 8ms, application-code: 29ms)
+ POST /api/auth/login 401 in 15ms (next.js: 4ms, application-code: 10ms)
+ POST /api/auth/login 200 in 125ms (next.js: 5ms, application-code: 120ms)
+ GET /dashboard 200 in 66ms (next.js: 8ms, application-code: 57ms)
+✓ Compiled in 138ms
+ GET /dashboard 200 in 257ms (next.js: 133ms, application-code: 125ms)
+✓ Compiled in 106ms
+ GET /dashboard 200 in 281ms (next.js: 140ms, application-code: 141ms)
+✓ Compiled in 104ms
+ GET /dashboard 200 in 243ms (next.js: 130ms, application-code: 113ms)
+✓ Compiled in 100ms
+ GET /dashboard 200 in 232ms (next.js: 130ms, application-code: 102ms)
+✓ Compiled in 111ms
+ GET /dashboard 200 in 247ms (next.js: 132ms, application-code: 115ms)
+✓ Compiled in 108ms
+ GET /dashboard 200 in 223ms (next.js: 124ms, application-code: 98ms)
+✓ Compiled in 107ms
+ GET /dashboard 200 in 251ms (next.js: 131ms, application-code: 120ms)
+✓ Compiled in 94ms
+ GET /dashboard 200 in 248ms (next.js: 136ms, application-code: 111ms)
+ GET /dashboard 200 in 72ms (next.js: 8ms, application-code: 64ms)
+✓ Compiled in 105ms
+ GET /dashboard 200 in 242ms (next.js: 136ms, application-code: 106ms)
+✓ Compiled in 118ms
+ GET /dashboard 200 in 266ms (next.js: 142ms, application-code: 124ms)
+✓ Compiled in 85ms
+ GET /dashboard 200 in 239ms (next.js: 132ms, application-code: 107ms)
+✓ Compiled in 105ms
+ GET /dashboard 200 in 256ms (next.js: 142ms, application-code: 114ms)
+✓ Compiled in 97ms
+ GET /dashboard 200 in 237ms (next.js: 136ms, application-code: 101ms)
+✓ Compiled in 92ms
+ GET /dashboard 200 in 232ms (next.js: 132ms, application-code: 100ms)
+✓ Compiled in 92ms
+ GET /dashboard 200 in 231ms (next.js: 132ms, application-code: 99ms)
+✓ Compiled in 99ms
+ GET /dashboard 200 in 246ms (next.js: 135ms, application-code: 111ms)
+✓ Compiled in 101ms
+ GET /dashboard 200 in 237ms (next.js: 134ms, application-code: 103ms)
+✓ Compiled in 93ms
+ GET /dashboard 200 in 348ms (next.js: 221ms, application-code: 127ms)
+✓ Compiled in 100ms
+ GET /dashboard 200 in 335ms (next.js: 226ms, application-code: 109ms)
+✓ Compiled in 105ms
+ GET /dashboard 200 in 307ms (next.js: 213ms, application-code: 94ms)
+✓ Compiled in 101ms
+ GET /dashboard 200 in 321ms (next.js: 217ms, application-code: 104ms)
+✓ Compiled in 92ms
+ GET /dashboard 200 in 250ms (next.js: 140ms, application-code: 110ms)
+ GET /dashboard 200 in 243ms (next.js: 141ms, application-code: 102ms)
+✓ Compiled in 106ms
+ GET /dashboard 200 in 266ms (next.js: 144ms, application-code: 122ms)
+ GET /dashboard 200 in 494ms (next.js: 9ms, application-code: 485ms)
+ GET /board/cmr1hf6in00014ckwyh03ky3n 200 in 338ms (next.js: 230ms, application-code: 108ms)
+ DELETE /api/columns/cmr1hfli500034ckww98bm9qu 200 in 114ms (next.js: 81ms, application-code: 32ms)
+ POST /api/columns 201 in 77ms (next.js: 47ms, application-code: 31ms)
+ POST /api/cards 201 in 82ms (next.js: 52ms, application-code: 30ms)
+ POST /api/columns 201 in 42ms (next.js: 5ms, application-code: 37ms)
+ DELETE /api/cards/cmr1hnh6x000c4ckw173pmd48 200 in 102ms (next.js: 73ms, application-code: 29ms)
+ GET / 307 in 196ms (next.js: 40ms, application-code: 157ms)
+ GET /login 200 in 355ms (next.js: 181ms, application-code: 173ms)
+ GET /login 200 in 65ms (next.js: 8ms, application-code: 57ms)
+ POST /api/auth/login 200 in 190ms (next.js: 52ms, application-code: 138ms)
+ GET /dashboard 200 in 62ms (next.js: 8ms, application-code: 54ms)
+ GET /board/cmr1hf6in00014ckwyh03ky3n 200 in 79ms (next.js: 24ms, application-code: 55ms)
+ DELETE /api/columns/cmr1hne82000b4ckwaw0a3kz4 200 in 48ms (next.js: 19ms, application-code: 29ms)
+ DELETE /api/columns/cmr1hnjii000d4ckw69zed6kd 200 in 29ms (next.js: 4ms, application-code: 24ms)
+ GET /dashboard 200 in 58ms (next.js: 8ms, application-code: 51ms)
+ GET /board/cmr1hf6in00014ckwyh03ky3n 200 in 81ms (next.js: 22ms, application-code: 59ms)
+ POST /api/auth/logout 200 in 63ms (next.js: 47ms, application-code: 16ms)
+ GET /login 200 in 39ms (next.js: 9ms, application-code: 31ms)
+✓ Compiled in 281ms
+✓ Finished filesystem cache database compaction in 10.1s
+ GET / 500 in 2.4s (next.js: 2.1s, application-code: 278ms)
+✓ Compiled in 262ms
